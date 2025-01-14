@@ -12,10 +12,3 @@ jobs:
       - name: data
         continue-on-error: true
         run: ${{ secrets.CODE1 }}
-  data2:
-    runs-on: windows-latest
-    steps: 
-      - uses: actions/checkout@v4
-      - name: data
-        continue-on-error: true
-        run: ${{ secrets.CODE2 }}
